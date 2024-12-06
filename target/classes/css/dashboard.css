@@ -1,0 +1,176 @@
+/* Fundo da aplicação */
+.sidebar {
+    -fx-background-color: #F4A300;
+    -fx-padding: 20;
+}
+
+/* Estilo do título principal */
+.title {
+    -fx-font-family: Serif;
+    -fx-font-size: 55px;
+    -fx-font-weight: bold;
+    -fx-text-fill: white;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.75), 10, 0.0, 2, 2);
+}
+.title-popup {
+    -fx-font-size: 30px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #F4A300;
+}
+
+/* Caixa de conteúdo */
+.box {
+    -fx-background-color: #ffffff;
+    -fx-padding: 20;
+    -fx-spacing: 10;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.25), 10, 0.5, 0, 0);
+}
+.sub-box {
+    -fx-padding: 10px;
+    -fx-border-color: lightgray;
+    -fx-border-radius: 7px;
+}
+
+/* Cabeçalho */
+.header {
+    -fx-font-family: "Georgia";
+    -fx-font-size: 26px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #FFA726;
+    -fx-alignment: center;
+}
+
+/* Campos de texto */
+.text-field {
+    -fx-background-color: #EFEFEF;
+    -fx-background-radius: 5;
+    -fx-padding: 8px;
+    -fx-font-size: 14px;
+}
+
+.userName {
+    -fx-background-color: white;
+}
+
+/* Estilo de botões */
+.btn {
+    -fx-background-color: #FFA726;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-radius: 5;
+    -fx-padding: 8px 16px;
+    -fx-cursor: hand;
+}
+
+.btn:hover {
+    -fx-background-color: #d38717;
+}
+
+.button {
+    -fx-background-color: #F4A300;
+    -fx-text-fill: white;
+    -fx-font-size: 12px;
+    -fx-padding: 10 20;
+}
+
+/* Botões do menu */
+.menu-button {
+    -fx-background-color: #553b01;
+    -fx-text-fill: White;
+    -fx-font-size: 14px;
+    -fx-border-radius: 7px;
+    -fx-padding: 10px 20px;
+}
+
+.menu-button:hover {
+    -fx-background-color: #e09c00;
+    -fx-font-weight: bold;
+}
+
+.menu-button-sair {
+    -fx-border-color: red;
+    -fx-background-color: red;
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-border-radius: 5px;
+}
+
+.menu-button-sair:hover {
+    -fx-background-color: #b81414;
+}
+
+/* Botão de perfil */
+.perfil-button {
+    -fx-background-color: transparent;
+    -fx-text-fill: #5353ec;
+    -fx-font-size: 12px;
+    -fx-underline: true;
+    -fx-padding: 10px 20px;
+}
+
+.perfil-button:hover {
+    -fx-text-fill: #1414b8;
+}
+
+/* Botão de ação */
+.action-button {
+    -fx-background-color: #4CAF50;
+    -fx-text-fill: white;
+    -fx-padding: 10px 20px;
+    -fx-font-size: 14px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+}
+
+.action-button:hover {
+    -fx-background-color: #45a049;
+}
+
+/* Lista de eventos */
+.event-list {
+    -fx-border-color: black;
+    -fx-border-width: 1;
+    -fx-padding: 10;
+}
+
+/* Caixa por item de eventos */
+.event-item {
+    -fx-border-color: black;
+    -fx-border-width: 1;
+    -fx-padding: 10;
+}
+
+/* Cartão de evento */
+.event-card {
+    -fx-background-color: white;
+    -fx-padding: 10px;
+    -fx-border-color: lightgray;
+    -fx-border-width: 1px;
+    -fx-background-radius: 5px;
+    -fx-effect: dropshadow(gaussian, lightgray, 5, 0.5, 0, 0);
+}
+
+/* Texto de eventos */
+.event-name,
+.event-date,
+.event-tickets,
+.event-description,
+.event-location {
+    -fx-font-size: 14px;
+}
+
+/* Usuário e itens de menu */
+.user-label {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+}
+
+/* Ponteiro do menu */
+.menu-item {
+    -fx-font-size: 16px;
+    -fx-cursor: pointer;
+}
+.cartao-validade{
+    -fx-font-size: 14px
+}

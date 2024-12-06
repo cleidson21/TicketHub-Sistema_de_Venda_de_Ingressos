@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.dashboardUser.DashboardUserController">
+    <!-- Barra lateral -->
+    <VBox alignment="TOP_CENTER" prefHeight="600.0" prefWidth="150" spacing="10" styleClass="sidebar">
+        <ChoiceBox fx:id="languageSelectionUser" prefHeight="25.0" prefWidth="164.0" />
+        <ImageView fx:id="userImage" fitHeight="80" fitWidth="80" />
+        <Label fx:id="userName" alignment="TOP_LEFT" contentDisplay="TOP" styleClass="user-label" />
+        <Button fx:id="perfilButton" prefWidth="108.0" styleClass="menu-button" text="Perfil">
+            <VBox.margin>
+                <Insets top="40.0" />
+            </VBox.margin>
+        </Button>
+        <Button fx:id="eventosButton" prefWidth="110.0" styleClass="menu-button" text="Eventos">
+            <VBox.margin>
+                <Insets top="10.0" />
+            </VBox.margin>
+        </Button>
+        <Button fx:id="ingressosButton" prefWidth="110.0" styleClass="menu-button" text="Ingressos">
+            <VBox.margin>
+                <Insets top="10.0" />
+            </VBox.margin>
+        </Button>
+        <Button fx:id="comprasButton" prefWidth="110.0" styleClass="menu-button" text="Compras">
+            <VBox.margin>
+                <Insets top="10.0" />
+            </VBox.margin>
+        </Button>
+        <Button fx:id="sairButton"  prefWidth="80.0" styleClass="menu-button-sair" text="Sair">
+            <VBox.margin>
+                <Insets top="70.0" />
+            </VBox.margin>
+        </Button>
+    </VBox>
+
+    <!-- Área principal com botões e lista de eventos -->
+    <AnchorPane layoutX="150.0" prefHeight="433.0" prefWidth="850.0">
+        <StackPane prefHeight="433.0" prefWidth="850.0">
+            <!-- Tela de Eventos (default) -->
+            <AnchorPane fx:id="eventosPane">
+                <ImageView fitHeight="600.0" fitWidth="850.0" opacity="0.7">
+                    <Image url="@../../images/background.jpg" />
+                </ImageView>
+                <Label alignment="CENTER" prefHeight="175.0" prefWidth="850.0" styleClass="title" text="TICKETHUB | EVENTOS" textAlignment="CENTER" />
+
+                <!-- ScrollPane para listar os eventos -->
+                <ScrollPane fitToWidth="true" layoutX="33.0" layoutY="167.0" prefHeight="390.0" prefWidth="780.0">
+                    <VBox fx:id="eventList" spacing="10.0">
+                        <padding>
+                            <Insets left="10.0" right="10.0" top="10.0" />
+                        </padding>
+                    </VBox>
+                </ScrollPane>
+            </AnchorPane>
+
+            <!-- Tela de Perfil -->
+            <AnchorPane fx:id="perfilPane" prefWidth="850.0" visible="false">
+                <ImageView fitHeight="600.0" fitWidth="850.0" opacity="0.7">
+                    <Image url="@../../images/background.jpg" />
+                </ImageView>
+                <Label alignment="CENTER" prefHeight="175.0" prefWidth="850.0" styleClass="title" text="TICKETHUB | PERFIL" textAlignment="CENTER" />
+                <VBox layoutX="32.0" layoutY="168.0" prefHeight="358.0" prefWidth="780.0" styleClass="box">
+                    <Label alignment="CENTER" prefHeight="42.0" prefWidth="780.0" styleClass="header" text="Meus Dados" textAlignment="CENTER">
+                        <VBox.margin>
+                            <Insets bottom="20.0" />
+                        </VBox.margin>
+                    </Label>
+                    <HBox prefHeight="434.0" prefWidth="780.0">
+                        <VBox prefHeight="357.0" prefWidth="390.0" spacing="10.0">
+                            <TextField fx:id="nomeField" prefWidth="383.0" promptText="Nome Completo" styleClass="text-field">
+                                <VBox.margin>
+                                    <Insets right="20.0" />
+                                </VBox.margin>
+                            </TextField>
+                            <TextField fx:id="emailField" promptText="Email" styleClass="text-field">
+                                <VBox.margin>
+                                    <Insets right="20.0" />
+                                </VBox.margin>
+                            </TextField>
+                            <TextField fx:id="senhaField" promptText="Senha" styleClass="text-field">
+                                <VBox.margin>
+                                    <Insets right="20.0" />
+                                </VBox.margin>
+                            </TextField>
+                            <ChoiceBox fx:id="cartoesList" prefWidth="150.0">
+                                <VBox.margin>
+                                    <Insets left="102.5" />
+                                </VBox.margin>
+                            </ChoiceBox>
+                            <HBox prefHeight="100.0" prefWidth="200.0">
+                                <Button fx:id="addCartaoButton" styleClass="btn" text="Adicionar Cartão">
+                                    <HBox.margin>
+                                        <Insets left="40.0" />
+                                    </HBox.margin>
+                                </Button>
+                                <Button fx:id="rmvCartaoButton" styleClass="btn" text="Remover Cartão">
+                                    <HBox.margin>
+                                        <Insets left="20.0" />
+                                    </HBox.margin>
+                                </Button>
+                            </HBox>
+                        </VBox>
+                        <VBox prefHeight="433.0" prefWidth="395.0" spacing="10.0">
+                            <TextField fx:id="loginField" editable="false" promptText="Login" styleClass="text-field">
+                                <VBox.margin>
+                                    <Insets left="20.0" />
+                                </VBox.margin>
+                            </TextField>
+                            <TextField fx:id="cpfField" editable="false" promptText="CPF" styleClass="text-field">
+                                <VBox.margin>
+                                    <Insets left="20.0" />
+                                </VBox.margin>
+                            </TextField>
+                            <TextField fx:id="senhaNovamenteField" promptText="Senha Novamente" styleClass="text-field">
+                                <VBox.margin>
+                                    <Insets left="20.0" />
+                                </VBox.margin>
+                            </TextField>
+                            <Button fx:id="alterarDadosButton" styleClass="btn" text="Salvar Dados">
+                                <VBox.margin>
+                                    <Insets left="145.0" />
+                                </VBox.margin>
+                            </Button>
+                        </VBox>
+                    </HBox>
+                </VBox>
+            </AnchorPane>
+
+            <!-- Tela de Ingressos -->
+            <AnchorPane fx:id="ingressosPane" visible="false">
+                <ImageView fitHeight="600.0" fitWidth="850.0" opacity="0.7">
+                    <Image url="@../../images/background.jpg" />
+                </ImageView>
+                <Label alignment="CENTER" prefHeight="175.0" prefWidth="850.0" styleClass="title" text="TICKETHUB | INGRESSOS" textAlignment="CENTER" />
+                <HBox layoutX="32.0" layoutY="168.0" prefHeight="390.0" prefWidth="780.0" styleClass="box">
+                    <!-- ScrollPane para listar os Ingressos Comprados -->
+                    <ScrollPane fitToWidth="true" layoutX="33.0" layoutY="167.0" prefHeight="390.0" prefWidth="390.0">
+                        <VBox fx:id="ingressosCompradosList" spacing="10.0" />
+                    </ScrollPane>
+                    <!-- ScrollPane para listar os Ingressos Comprados -->
+                    <ScrollPane fitToWidth="true" layoutX="33.0" layoutY="167.0" prefHeight="390.0" prefWidth="390.0">
+                        <VBox fx:id="ingressosVencidosList" spacing="10.0" />
+                    </ScrollPane>
+                </HBox>
+            </AnchorPane>
+
+            <!-- Tela de Compras -->
+            <AnchorPane fx:id="comprasPane" prefWidth="850.0" visible="false">
+                <ImageView fitHeight="600.0" fitWidth="850.0" opacity="0.7">
+                    <Image url="@../../images/background.jpg" />
+                </ImageView>
+                <Label alignment="CENTER" prefHeight="175.0" prefWidth="850.0" styleClass="title" text="TICKETHUB | COMPRAS" textAlignment="CENTER" />
+                <VBox layoutX="32.0" layoutY="168.0" prefHeight="358.0" prefWidth="780.0" styleClass="box">
+                    <HBox prefHeight="434.0" prefWidth="780.0">
+                        <VBox prefHeight="357.0" prefWidth="390.0" spacing="10.0" styleClass="sub-box">
+                            <Label alignment="CENTER" prefHeight="42.0" prefWidth="780.0" styleClass="header" text="Novo Ingresso" textAlignment="CENTER">
+                                <VBox.margin>
+                                    <Insets bottom="20.0" />
+                                </VBox.margin>
+                            </Label>
+                            <Label alignment="CENTER" prefHeight="42.0" prefWidth="780.0" styleClass="subheader" text="Evento" />
+                            <ChoiceBox fx:id="eventCompraList" prefWidth="350.0">
+                                <VBox.margin>
+                                    <Insets left="5.0" />
+                                </VBox.margin>
+                            </ChoiceBox>
+                            <Label alignment="CENTER" prefHeight="42.0" prefWidth="780.0" styleClass="subheader" text="Assento" />
+                            <ChoiceBox fx:id="assentoCompraList" prefWidth="350.0">
+                                <VBox.margin>
+                                    <Insets left="5.0" />
+                                </VBox.margin>
+                            </ChoiceBox>
+                            <Label alignment="CENTER" prefHeight="42.0" prefWidth="780.0" styleClass="subheader" text="Metodo de Pagamento" />
+                            <ChoiceBox fx:id="metodoCompraList" prefWidth="350.0">
+                                <items>
+                                    <FXCollections fx:factory="observableArrayList">
+                                        <String fx:value="Boleto" />
+                                        <String fx:value="Cartão" />
+                                    </FXCollections>
+                                </items>
+                                <VBox.margin>
+                                    <Insets left="5.0" />
+                                </VBox.margin>
+                            </ChoiceBox>
+                            <HBox prefHeight="100.0" prefWidth="200.0">
+                                <Button fx:id="comprarIngressoButton" styleClass="btn" text="Comprar ">
+                                    <HBox.margin>
+                                        <Insets left="75.0" />
+                                    </HBox.margin>
+                                </Button>
+                                <Button fx:id="cancelarCompraButton" styleClass="btn" text="Cancelar">
+                                    <HBox.margin>
+                                        <Insets left="20.0" />
+                                    </HBox.margin>
+                                </Button>
+                            </HBox>
+                        </VBox>
+                        <VBox prefHeight="433.0" prefWidth="395.0" spacing="10.0" styleClass="sub-box">
+                            <Label alignment="CENTER" prefHeight="42.0" prefWidth="780.0" styleClass="header" text="Informações do Evento" textAlignment="CENTER" />
+                            <VBox fx:id="dadosEventoCompra" prefHeight="258.0" prefWidth="393.0" />
+                        </VBox>
+                    </HBox>
+                </VBox>
+            </AnchorPane>
+
+        </StackPane>
+    </AnchorPane>
+</AnchorPane>

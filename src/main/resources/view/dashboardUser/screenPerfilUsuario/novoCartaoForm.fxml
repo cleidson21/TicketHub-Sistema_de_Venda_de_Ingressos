@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.collections.FXCollections?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.dashboardUser.screenPerfilUsuario.NovoCartaoController">
+   <VBox alignment="CENTER" prefHeight="380" prefWidth="320" spacing="15">
+      <Label styleClass="title-popup" text="Novo Cartão"/>
+
+      <TextField fx:id="nomeTitularField" prefWidth="278.0" promptText="Nome do Titular" styleClass="text-field">
+         <VBox.margin>
+            <Insets left="15.0" right="15.0"/>
+         </VBox.margin>
+      </TextField>
+      <ComboBox fx:id="tipoCartaoComboBox" promptText="Selecione o Tipo de Cartão" styleClass="text-field">
+         <items>
+            <FXCollections fx:factory="observableArrayList">
+               <String fx:value="Crédito"/>
+               <String fx:value="Débito"/>
+               <String fx:value="Crédito/Débito"/>
+            </FXCollections>
+         </items>
+         <VBox.margin>
+            <Insets left="15.0" right="15.0"/>
+         </VBox.margin>
+      </ComboBox>
+      <TextField fx:id="numeroField" promptText="Número" styleClass="text-field">
+         <VBox.margin>
+            <Insets left="15.0" right="15.0"/>
+         </VBox.margin>
+      </TextField>
+      <HBox>
+         <TextField fx:id="mesValidadeField" alignment="CENTER" prefHeight="25.0" prefWidth="85.0"
+                    promptText="Mês (Ex. 00)" styleClass="text-field">
+            <HBox.margin>
+               <Insets left="60.0" right="5.0"/>
+            </HBox.margin>
+         </TextField>
+         <Label alignment="CENTER" contentDisplay="BOTTOM" styleClass="cartao-validade" text="/"/>
+         <TextField fx:id="anoValidadeField" alignment="CENTER" prefHeight="25.0" prefWidth="85.0"
+                    promptText="Ano (Ex. 00)" styleClass="text-field">
+            <HBox.margin>
+               <Insets left="5.0"/>
+            </HBox.margin>
+         </TextField>
+      </HBox>
+      <TextField fx:id="cvcField" promptText="CVC" styleClass="text-field">
+         <VBox.margin>
+            <Insets left="15.0" right="15.0"/>
+         </VBox.margin>
+      </TextField>
+
+      <HBox alignment="CENTER" spacing="10">
+         <Button onAction="#handleAddCartao" styleClass="action-button" text="Adicionar Cartão">
+            <HBox.margin>
+               <Insets bottom="10.0"/>
+            </HBox.margin>
+         </Button>
+         <Button onAction="#handleCancelar" styleClass="menu-button-sair" text="Cancelar">
+            <HBox.margin>
+               <Insets bottom="10.0"/>
+            </HBox.margin>
+         </Button>
+      </HBox>
+   </VBox>
+</AnchorPane>
