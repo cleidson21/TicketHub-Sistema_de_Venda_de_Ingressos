@@ -37,12 +37,12 @@ A aplicação possui uma interface moderna e interativa, estruturada para facili
 TicketHub/
 ├── src/main/java/
 │   ├── view/                            # Pacote principal das interfaces e controladores
-│   │   ├── screenAdmin/                 # Telas do administrador
-│   │   ├── screenComprasUsuario/        # Telas para compra de ingressos
-│   │   ├── screenEventosUsuario/        # Navegação por eventos
-│   │   ├── screenPerfilUsuario/         # Gerenciamento de perfil do usuário
+│   │   ├── dashboardAdmin/              # Pacote das interfaces e controlador da tela do Admin
+│   │   ├── dashboardUser/               # Pacote das interfaces e controladores das telas do Usuario
+│   │   │   ├── screenComprasUsuario/    # Telas para compra de ingressos
+│   │   │   ├── screenEventosUsuario/    # Navegação por eventos
+│   │   │   ├── screenPerfilUsuario/     # Gerenciamento de perfil do usuário
 │   ├── model/                           # Classes de modelo para persistência e lógica de negócio
-│   ├── controller/                      # Controladores principais da aplicação
 ├── src/main/resources/                  # Arquivos FXML, CSS e de internacionalização
 └── README.md                            # Documentação do projeto
 ```
