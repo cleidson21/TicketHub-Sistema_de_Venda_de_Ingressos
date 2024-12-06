@@ -1,5 +1,5 @@
 # TicketHub - Sistema de Venda de Ingressos
-## Descrição do prejeto:
+## Descrição do projeto:
 TicketHub é uma aplicação desenvolvida em Java com o framework JavaFX, projetada para gerenciar a compra, venda e administração de ingressos para eventos. O sistema é robusto e modular, atendendo tanto os administradores dos eventos quanto os usuários que desejam adquirir ingressos.
 
 A aplicação possui uma interface moderna e interativa, estruturada para facilitar a navegação e a usabilidade. Todos os dados são manipulados e armazenados utilizando boas práticas de programação orientada a objetos e persistência em JSON, garantindo confiabilidade e organização.
