@@ -1,36 +1,38 @@
-#TicketHub - Sistema de Venda de Ingressos
+# TicketHub - Sistema de Venda de Ingressos
+## Descrição do prejeto:
 TicketHub é uma aplicação desenvolvida em Java com o framework JavaFX, projetada para gerenciar a compra, venda e administração de ingressos para eventos. O sistema é robusto e modular, atendendo tanto os administradores dos eventos quanto os usuários que desejam adquirir ingressos.
 
 A aplicação possui uma interface moderna e interativa, estruturada para facilitar a navegação e a usabilidade. Todos os dados são manipulados e armazenados utilizando boas práticas de programação orientada a objetos e persistência em JSON, garantindo confiabilidade e organização.
-##📋 Funcionalidades Principais
 
-###1. Módulo de Administração
+## 📋 Funcionalidades Principais
+
+### 1. Módulo de Administração
 - Cadastro e Edição de Eventos: Criação de novos eventos com informações detalhadas como nome, descrição, data, local e quantidade de ingressos disponíveis.
 - Gerenciamento de Eventos: Visualização, edição ou exclusão de eventos existentes.
 - Painel de Controle: Dashboard dedicado para administradores, oferecendo uma visão consolidada dos eventos cadastrados.
 
-###2. Módulo de Usuário
+### 2. Módulo de Usuário
 - Navegação por Eventos: Lista completa de eventos disponíveis com filtros e detalhes relevantes.
 - Compra de Ingressos: Seleção de assentos e métodos de pagamento para concluir a aquisição.
 - Histórico de Compras: Visualização de ingressos adquiridos e status das compras.
 - Feedback: Avaliação e comentários sobre eventos já concluídos.
 
-###3. Suporte a Múltiplos Idiomas
+### 3. Suporte a Múltiplos Idiomas
 - O sistema suporta diferentes idiomas, ajustando a interface e as mensagens com base na preferência do usuário.
 
-###4. Segurança e Acessibilidade
+### 4. Segurança e Acessibilidade
 - Login e Registro: Sistema de autenticação para usuários e administradores, com validações de dados.
 - Teclas de Atalho: Facilita a navegação para usuários avançados.
 - Responsividade: Layout adaptado para diferentes resoluções de tela.
 
-##🛠️ Tecnologias Utilizadas
+## 🛠️ Tecnologias Utilizadas
 - Java 21: Backend e lógica de negócio.
 - JavaFX: Interface gráfica rica e responsiva.
 - Maven: Gerenciamento de dependências e build do projeto.
 - Gson: Persistência de dados em arquivos JSON.
 - FXML: Definição de layouts modulares e personalizáveis.
 
-##📁 Estrutura do Projeto
+## 📁 Estrutura do Projeto
 TicketHub/
 ├── src/main/java/
 │   ├── view/          # Pacote principal das interfaces e controladores
@@ -53,12 +55,12 @@ TicketHub/
 6. Execute a aplicação:
   - mvn javafx:run
 
-##🤝 Contribuições
+## 🤝 Contribuições
 Contribuições são bem-vindas! Para melhorar o projeto, você pode:
 - Abrir uma Issue para discutir novas funcionalidades ou correções.
 - Enviar um Pull Request com suas melhorias.
 
-##📜 Licença
+## 📜 Licença
 Este projeto está licenciado sob a Licença MIT. Sinta-se à vontade para usá-lo, modificá-lo e distribuí-lo, desde que a devida atribuição seja mantida.
 
 TicketHub é a solução ideal para quem busca gerenciar eventos e ingressos de maneira fácil, segura e eficiente. 🎉
