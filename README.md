@@ -43,8 +43,7 @@ A aplicação possui uma interface moderna e interativa, estruturada para facili
 │   ├── model/                           # Classes de modelo para persistência e lógica de negócio
 │   ├── controller/                      # Controladores principais da aplicação
 ├── src/main/resources/                  # Arquivos FXML, CSS e de internacionalização
-└── README.md                            # Documentação do projeto
-'''
+└── README.md                            # Documentação do projeto'''
 
 ##⚡ Como Executar o Projeto
 1. Clone o repositório:
