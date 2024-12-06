@@ -33,7 +33,17 @@ A aplicação possui uma interface moderna e interativa, estruturada para facili
 - FXML: Definição de layouts modulares e personalizáveis.
 
 ## 📁 Estrutura do Projeto
-```TicketHub/├── src/main/java/│   ├── view/                            # Pacote principal das interfaces e controladores│   │   ├── screenAdmin/                 # Telas do administrador│   │   ├── screenComprasUsuario/        # Telas para compra de ingressos│   │   ├── screenEventosUsuario/        # Navegação por eventos│   │   ├── screenPerfilUsuario/         # Gerenciamento de perfil do usuário│   ├── model/                           # Classes de modelo para persistência e lógica de negócio│   ├── controller/                      # Controladores principais da aplicação├── src/main/resources/                  # Arquivos FXML, CSS e de internacionalização└── README.md                            # Documentação do projeto ```
+```TicketHub/```
+```├── src/main/java/```
+```│   ├── view/                            # Pacote principal das interfaces e controladores```
+```│   │   ├── screenAdmin/                 # Telas do administrador```
+```│   │   ├── screenComprasUsuario/        # Telas para compra de ingressos```
+```│   │   ├── screenEventosUsuario/        # Navegação por eventos```
+```│   │   ├── screenPerfilUsuario/         # Gerenciamento de perfil do usuário```
+```│   ├── model/                           # Classes de modelo para persistência e lógica de negócio```
+```│   ├── controller/                      # Controladores principais da aplicação```
+```├── src/main/resources/                  # Arquivos FXML, CSS e de internacionalização```
+```└── README.md                            # Documentação do projeto ```
 
 ##⚡ Como Executar o Projeto
 1. Clone o repositório:
