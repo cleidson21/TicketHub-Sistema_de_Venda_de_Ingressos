@@ -208,7 +208,7 @@ public class LoginController extends BaseController {
 
         try {
             // Realiza o registro do novo usuário
-            controller.cadastrarUsuario(loginRg, senha, nome, cpf, email, false);
+            controller.cadastrarUsuario(loginRg, senha, nome, cpf, email, Boolean.FALSE);
 
             // Exibe mensagem de sucesso
             Alert alert = new Alert(Alert.AlertType.INFORMATION, "Registro efetuado com sucesso.");

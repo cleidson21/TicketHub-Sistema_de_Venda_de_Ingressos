@@ -240,7 +240,7 @@ public class IngressosController {
             }
 
             // Carrega o formulário de feedback a partir do arquivo FXML
-            FXMLLoader loader = new FXMLLoader(Main.class.getResource("/view/screenIngressosUsuario/novoFeedbackForm.fxml"));
+            FXMLLoader loader = new FXMLLoader(Main.class.getResource("/view/dashboardUser/screenIngressosUsuario/novoFeedbackForm.fxml"));
             AnchorPane feedbackForm = loader.load();
 
             // Configura o controller do formulário de feedback

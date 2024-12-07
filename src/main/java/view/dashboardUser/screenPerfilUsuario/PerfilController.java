@@ -168,7 +168,7 @@ public class PerfilController {
                 novoCartaoStage.toFront();  // Coloca a janela em primeiro plano
             } else {
                 // Carrega o formulário de novo cartão
-                FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/screenPerfilUsuario/novoCartaoForm.fxml"));
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/dashboardUser/screenPerfilUsuario/novoCartaoForm.fxml"));
                 AnchorPane novoCartaoForm = loader.load();
 
                 // Obtém o controlador da nova janela e configura seus parâmetros

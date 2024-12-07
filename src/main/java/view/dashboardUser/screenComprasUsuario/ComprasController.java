@@ -235,7 +235,7 @@ public class ComprasController {
                             .orElse(null);
                     if (eventoSelecionado != null) {
                         // Carrega o formulário de nova compra
-                        FXMLLoader loader = new FXMLLoader(Main.class.getResource("/view/screenComprasUsuario/novaCompraForm.fxml"));
+                        FXMLLoader loader = new FXMLLoader(Main.class.getResource("/view/dashboardUser/screenComprasUsuario/novaCompraForm.fxml"));
                         AnchorPane novaCompraForm = loader.load();
 
                         NovaCompraController novaCompraController = loader.getController();
@@ -312,7 +312,7 @@ public class ComprasController {
             alert.showAndWait();
         } else {
             if (metodoSelecionado.equalsIgnoreCase("Boleto")) {
-                // Retorna "Boleto" se este método for selecionado
+                // Retorna "Boleto" se este metodo for selecionado
                 return metodoSelecionado;
             } else if (metodoSelecionado.equalsIgnoreCase("Cartão")) {
                 // Verifica se há cartões cadastrados no perfil do usuário
@@ -350,12 +350,12 @@ public class ComprasController {
                         alert.setHeaderText(null);
                         alert.showAndWait();
                     }
-                    // Retorna "Cartão" se este método for válido
+                    // Retorna "Cartão" se este metodo for válido
                     return metodoSelecionado;
                 }
             }
         }
-        // Retorna o método selecionado ou null caso nenhuma opção seja válida
+        // Retorna o metodo selecionado ou null caso nenhuma opção seja válida
         return metodoSelecionado;
     }
 
