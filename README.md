@@ -36,7 +36,8 @@ A aplicação possui uma interface moderna e interativa, estruturada para facili
 ```
 TicketHub/
 ├── src/main/java/
-│   ├── view/                            # Pacote principal das interfaces e controladores
+│   ├── controller/                      # Pacote principal dos controladores
+│   ├── view/                            # Pacote principal das interfaces
 │   │   ├── dashboardAdmin/              # Pacote das interfaces e controlador da tela do Admin
 │   │   ├── dashboardUser/               # Pacote das interfaces e controladores das telas do Usuario
 │   │   │   ├── screenComprasUsuario/    # Telas para compra de ingressos
