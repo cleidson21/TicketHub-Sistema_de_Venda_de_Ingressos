@@ -50,7 +50,7 @@ TicketHub/
 
 ##⚡ Como Executar o Projeto
 1. Clone o repositório:
-   - git clone https://github.com/cleidson21/TicketHub-Sistema_de_Venda_de_Ingressos.java
+   - git clone https://github.com/cleidson21/TicketHub-Sistema_de_Venda_de_Ingressos
 3. Abra o projeto em sua IDE preferida (recomenda-se IntelliJ IDEA).
 4. Certifique-se de ter o Java JDK 21 e o Maven instalados.
 5. Compile o projeto:
